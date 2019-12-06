@@ -142,7 +142,7 @@ std::cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
     information parcer(std::string file)
     {
         if (!exceptions(file))
-         throw logic_error("");
+         throw std::logic_error("");
 
          information new_file;
 
