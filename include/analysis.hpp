@@ -97,7 +97,8 @@ public:
         std::cout << "Task one " << std::endl;
         for (size_t i = 0; i < informations.size(); ++i)
         {
-std::cout << informations[i].broker << "  " << informations[i].title << std::endl;
+std::cout << informations[i].broker << "  ";
+std::cout << informations[i].title << std::endl;
         }
     }
 
