@@ -6,10 +6,10 @@
 //using namespace std;
 
 int main(){
-string path_to_ftp = "/home/absinthetoxin/CrazyOverdose/"
-        + "lab04_boost_filesystem/misc/ftp";
-analysis example(path_to_ftp);
-example.work(path_to_ftp);
+analysis example("/home/absinthetoxin/CrazyOverdose/"
+                 + "lab04_boost_filesystem/misc/ftp");
+example.work("/home/absinthetoxin/CrazyOverdose/"
+             + "lab04_boost_filesystem/misc/ftp");
 example.print_name_files();
 example.print_information();
 }
