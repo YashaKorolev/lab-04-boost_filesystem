@@ -3,8 +3,6 @@
 #include <string>
 #include <cstdlib>
 
-using namespace std;
-
 struct Date {
     int day;
     int month;
@@ -124,14 +122,15 @@ public:
     {
         bool flag = false;
 
-        if ("balance_" == file.substr(0, 8))
-            if ('_' == file[16])
-                if (".txt" == file.substr(25))
-                    if (std::atoi((file.substr(8, 8)).c_str()) != 0)
+        if ("balance_" == file.substr(0, 8)){
+            if ('_' == file[16]){
+                if (".txt" == file.substr(25)){
+                    if (std::atoi((file.substr(8, 8)).c_str()) != 0){
                         if (std::atoi((file.substr(17, 8)).c_str())!= 0)
                         {
                             flag = true;
-                        }
+                        }}}}}
+
         return flag;}
 
     information parcer(string file)
