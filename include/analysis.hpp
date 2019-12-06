@@ -58,7 +58,8 @@ public:
     }
 
      void work(boost::filesystem :: path path) {
-        for (boost::filesystem::directory_entry dir_iter : boost::filesystem::directory_iterator{ path })
+        for (boost::filesystem::directory_entry dir_iter :
+        boost::filesystem::directory_iterator{ path })
         {
             if (boost::filesystem::is_regular_file(dir_iter))
                 file(dir_iter);
@@ -66,7 +67,7 @@ public:
                 work(dir_iter); }
     }
 
-   void  file (boost::filesystem :: path path)
+   void file (boost::filesystem :: path path)
     {
         try {
             information new_file = parcer(path.filename().string());
@@ -90,9 +91,9 @@ public:
     void print_name_files()
     {
         cout << "Task one " << endl;
-        for(size_t i = 0; i < informations.size(); ++i)
+        for (size_t i = 0; i < informations.size(); ++i)
         {
-            cout << informations[i].broker << "  " << informations[i].title << endl;
+cout << informations[i].broker << "  " << informations[i].title << endl;
         }
     }
 
@@ -100,7 +101,7 @@ public:
     {
         cout << "Task two " << endl;
 
-        for(const auto& i :accounts_groups )
+        for (const auto& i : accounts_groups )
         {
             cout << "broker: " << i.second[0].broker << "| ";
 
@@ -110,7 +111,7 @@ public:
 
             cout << "lastdate: ";
 
-            cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
+cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
 
             cout << " ";
 
