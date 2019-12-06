@@ -112,27 +112,29 @@ public:
 
             cout << "lastdate: ";
 
-            cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data << " ";
+            cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
+
+            cout << " ";
 
             cout << std::endl;
         }
     }
 
-    bool exceptions (string file)
+    bool exceptions(string file)
     {
         bool flag = false;
 
         if ("balance_" == file.substr(0, 8))
             if ('_' == file[16])
                 if (".txt" == file.substr(25))
-                    if (std::atoi((file.substr(8, 8)).c_str())!=0)
-                        if (std::atoi((file.substr(17, 8)).c_str())!=0)
+                    if (std::atoi((file.substr(8, 8)).c_str()) != 0)
+                        if (std::atoi((file.substr(17, 8)).c_str())!= 0)
                         {
                             flag = true;
                         }
         return flag;}
 
-    information parcer (string file)
+    information parcer(string file)
     {
         if (!exceptions(file))
          throw logic_error("");
