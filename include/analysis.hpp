@@ -142,19 +142,19 @@ public:
 
          file.erase(0, 8);
 
-         new_file.account = std::atoi((file.substr(0,8)).c_str());
+         new_file.account = std::atoi((file.substr(0, 8)).c_str());
 
         file.erase(0, 9);
 
-        new_file.data.year = std::atoi((file.substr(0,4)).c_str());
+        new_file.data.year = std::atoi((file.substr(0, 4)).c_str());
 
         file.erase(0, 4);
 
-        new_file.data.month = std::atoi((file.substr(0,2)).c_str());
+        new_file.data.month = std::atoi((file.substr(0, 2)).c_str());
 
         file.erase(0, 2);
 
-        new_file.data.day = std::atoi((file.substr(0,2)).c_str());
+        new_file.data.day = std::atoi((file.substr(0, 2)).c_str());
 
         return new_file;
     }
