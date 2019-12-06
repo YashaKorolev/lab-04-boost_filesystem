@@ -51,9 +51,9 @@ class analysis
 {
 protected:
     boost::filesystem :: path path_to_ftp;
-    vector <information> informations;
+    std::vector <information> informations;
 
-    std::unordered_map<int, vector<information>> accounts_groups;
+    std::unordered_map<int, std::vector<information>> accounts_groups;
 
 public:
     explicit analysis(boost::filesystem :: path path)
@@ -94,32 +94,32 @@ public:
 
     void print_name_files()
     {
-        cout << "Task one " << endl;
+        std::cout << "Task one " << std::endl;
         for (size_t i = 0; i < informations.size(); ++i)
         {
-cout << informations[i].broker << "  " << informations[i].title << endl;
+std::cout << informations[i].broker << "  " << informations[i].title << std::endl;
         }
     }
 
     void print_information()
     {
-        cout << "Task two " << endl;
+        std::cout << "Task two " << std::endl;
 
         for (const auto& i : accounts_groups )
         {
-            cout << "broker: " << i.second[0].broker << "| ";
+            std::cout << "broker: " << i.second[0].broker << "| ";
 
-            cout << "account: " << i.first << "| ";
+            std::cout << "account: " << i.first << "| ";
 
-            cout << "files: " << i.second.size() << "| ";
+            std::cout << "files: " << i.second.size() << "| ";
 
-            cout << "lastdate: ";
+            std::cout << "lastdate: ";
 
-cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
+std::cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
 
-            cout << " ";
+            std::cout << " ";
 
-            cout << std::endl;
+            std::cout << std::endl;
         }
     }
 
