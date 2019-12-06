@@ -57,9 +57,9 @@ bcs balance_00001234_20181005.txt
 - также она должна вывести общее количество файлов по каждому обнаруженному счёту и дату самого актуального (самого нового) файла, например:
 
 ```Shell
-broker:ib account:00001234 files:10 lastdate:20181017
-broker:ib account:00001356 files:7 lastdate:20181018
-broker:bcs account:12341356 files:8 lastdate:20181016
+broker:ib account:00001234 files:10 lastdate_predicat:20181017
+broker:ib account:00001356 files:7 lastdate_predicat:20181018
+broker:bcs account:12341356 files:8 lastdate_predicat:20181016
 ```
 
 ## Рекомендации

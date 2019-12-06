@@ -32,7 +32,7 @@ if (BUILD_MAIN)
             ${ADDSOURCES}
             STATIC
             ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
-    )
+            sources/Analys.cpp include/Analys.h)
     target_include_directories(
             ${ADDSOURCES}
             PUBLIC

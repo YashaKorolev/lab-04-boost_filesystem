@@ -1,0 +1,13 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/alexandergaranin/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 96fa17b | Config-ID: c351cc1 ]
+-- [hunter] BOOST_ROOT: /Users/alexandergaranin/.hunter/_Base/9a3594a/96fa17b/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] BOOST_ROOT: /Users/alexandergaranin/.hunter/_Base/9a3594a/96fa17b/c351cc1/Install (ver.: 1.70.0-p0)
+-- Boost version: 1.70.0
+-- Found the following Boost libraries:
+--   filesystem
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug
