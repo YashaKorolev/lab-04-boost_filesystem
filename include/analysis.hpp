@@ -14,8 +14,8 @@ struct Date {
 };
 
 struct information {
-    string title; //название файла
-    string broker; //папка
+    std::string title; //название файла
+   std:: string broker; //папка
     int account; //аккаунт
     Date data; // дата
 };
@@ -76,7 +76,7 @@ public:
         try {
             information new_file = parcer(path.filename().string());
 
-            string path2 = path.string();
+            std::string path2 = path.string();
 
             size_t i = path2.rfind('/');
             path2.erase(i);
@@ -123,7 +123,7 @@ cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
         }
     }
 
-    bool exceptions(string file)
+    bool exceptions(std::string file)
     {
         bool flag = false;
 
@@ -138,7 +138,7 @@ cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
 
         return flag;}
 
-    information parcer(string file)
+    information parcer(std::string file)
     {
         if (!exceptions(file))
          throw logic_error("");
