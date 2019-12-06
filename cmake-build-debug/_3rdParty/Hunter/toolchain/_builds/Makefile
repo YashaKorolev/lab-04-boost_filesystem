@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain
+CMAKE_SOURCE_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds
+CMAKE_BINARY_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesyst
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

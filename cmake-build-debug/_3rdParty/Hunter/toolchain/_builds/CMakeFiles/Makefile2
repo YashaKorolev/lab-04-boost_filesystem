@@ -35,19 +35,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain
+CMAKE_SOURCE_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds
+CMAKE_BINARY_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds
 
 #=============================================================================
 # Directory level rules for the build root directory

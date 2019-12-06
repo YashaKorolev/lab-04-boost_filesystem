@@ -1,5 +1,3 @@
-//
-// Created by alexandergaranin on 07.12.2019.
-//
+//Copyright 2019 yasha
 
 #include "Analys.h"

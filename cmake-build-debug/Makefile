@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem
+CMAKE_SOURCE_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesyst
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named filesMain
-
-# Build rule for target.
-filesMain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 filesMain
-.PHONY : filesMain
-
-# fast build rule for target.
-filesMain/fast:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/build
-.PHONY : filesMain/fast
-
-#=============================================================================
 # Target rules for targets named filesSources
 
 # Build rule for target.
@@ -135,6 +122,19 @@ filesSources: cmake_check_build_system
 filesSources/fast:
 	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/build
 .PHONY : filesSources/fast
+
+#=============================================================================
+# Target rules for targets named filesMain
+
+# Build rule for target.
+filesMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filesMain
+.PHONY : filesMain
+
+# fast build rule for target.
+filesMain/fast:
+	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/build
+.PHONY : filesMain/fast
 
 sources/Analys.o: sources/Analys.cpp.o
 
@@ -169,8 +169,8 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.o
 	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -179,8 +179,8 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.i
 	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -189,8 +189,8 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.s
 	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
 # Help Target
@@ -201,8 +201,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... filesMain"
 	@echo "... filesSources"
+	@echo "... filesMain"
 	@echo "... sources/Analys.o"
 	@echo "... sources/Analys.i"
 	@echo "... sources/Analys.s"

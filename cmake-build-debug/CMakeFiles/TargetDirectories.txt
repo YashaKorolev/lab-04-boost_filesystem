@@ -1,4 +1,4 @@
-/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/filesMain.dir
-/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/filesSources.dir
+/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/filesSources.dir
+/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/filesMain.dir

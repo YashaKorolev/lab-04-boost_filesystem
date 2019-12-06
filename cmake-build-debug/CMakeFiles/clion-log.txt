@@ -1,13 +1,329 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem
+/home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- [hunter] Calculating Toolchain-SHA1
 -- [hunter] Calculating Config-SHA1
--- [hunter] HUNTER_ROOT: /Users/alexandergaranin/.hunter
--- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 96fa17b | Config-ID: c351cc1 ]
--- [hunter] BOOST_ROOT: /Users/alexandergaranin/.hunter/_Base/9a3594a/96fa17b/c351cc1/Install (ver.: 1.70.0-p0)
--- [hunter] BOOST_ROOT: /Users/alexandergaranin/.hunter/_Base/9a3594a/96fa17b/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] HUNTER_ROOT: /home/yasha/.hunter
+-- [hunter] [ Hunter-ID: 9a3594a | Toolchain-ID: 70e2fd0 | Config-ID: 48401e9 ]
+-- [hunter] BOOST_ROOT: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost
+loading initial cache file /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/cache.cmake
+loading initial cache file /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/args.cmake
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/Build
+Scanning dependencies of target Boost
+[ 12%] Creating directories for 'Boost'
+[ 25%] Performing download step (download, verify and extract) for 'Boost'
+-- Downloading...
+   dst='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+   timeout='none'
+-- Using src='https://github.com/hunter-packages/boost/archive/v1.70.0-p0.tar.gz'
+-- verifying file...
+       file='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- Downloading... done
+-- extracting...
+     src='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost'
+[ 50%] Performing update step for 'Boost'
+[ 62%] Performing configure step for 'Boost'
+Dummy patch command
+Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.linuxx86_64/b2
+Detecting Python version... 3.7
+Detecting Python root... /usr
+Unicode/ICU support for Boost.Regex?... /usr
+Generating Boost.Build configuration in project-config.jam for gcc...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] No build step for 'Boost'
+[ 87%] Performing install step for 'Boost'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+loading initial cache file /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/args.cmake
+[100%] Completed 'Boost'
+[100%] Built target Boost
+-- [hunter] Build step successful (dir: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost)
+-- [hunter] Cache saved: /home/yasha/.hunter/_Base/Cache/raw/993dc75a0853cce2eb5a2facfc6eb741880e2fb4.tar.bz2
+-- [hunter] BOOST_ROOT: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost (component: filesystem)
+loading initial cache file /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/cache.cmake
+loading initial cache file /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/args.cmake
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Build
+Scanning dependencies of target Boost-filesystem
+[ 12%] Creating directories for 'Boost-filesystem'
+[ 25%] Performing download step (download, verify and extract) for 'Boost-filesystem'
+-- verifying file...
+       file='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+  SHA1='e6bb97b5109c7c15ea459cf2b1a9d52cbf88a89e'
+-- extracting...
+     src='/home/yasha/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost-filesystem'
+[ 50%] Performing update step for 'Boost-filesystem'
+[ 62%] Performing configure step for 'Boost-filesystem'
+Dummy patch command
+Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.linuxx86_64/b2
+Detecting Python version... 3.7
+Detecting Python root... /usr
+Unicode/ICU support for Boost.Regex?... /usr
+Generating Boost.Build configuration in project-config.jam for gcc...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] Performing build step for 'Boost-filesystem'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Building the Boost C++ Libraries.
+
+
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...found 567 targets...
+...updating 37 targets...
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/operations.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/path_traits.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/portability.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/unique_path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+gcc.archive bin.v2/libs/filesystem/build/gcc-8.3.0/debug/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-d-x64.a
+common.copy /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Source/stage/lib/libboost_filesystem-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/operations.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/path_traits.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/portability.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/unique_path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+gcc.archive bin.v2/libs/filesystem/build/gcc-8.3.0/release/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-x64.a
+common.copy /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Source/stage/lib/libboost_filesystem-mt-x64.a
+...updated 37 targets...
+
+
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Source
+
+The following directory should be added to linker library paths:
+
+    /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem/Source/stage/lib
+
+[ 87%] Performing install step for 'Boost-filesystem'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+[100%] Completed 'Boost-filesystem'
+[100%] Built target Boost-filesystem
+-- [hunter] Build step successful (dir: /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Build/Boost/__filesystem)
+-- [hunter] Cache saved: /home/yasha/.hunter/_Base/Cache/raw/b255e3b38b93d7ad11f633e3b6cb246d20e1c5bf.tar.bz2
 -- Boost version: 1.70.0
 -- Found the following Boost libraries:
 --   filesystem
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug
+-- Build files have been written to: /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/yasha/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/192.7142.39/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem
+CMAKE_SOURCE_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/filesSources.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/filesSources.dir/flags.make
 
 CMakeFiles/filesSources.dir/sources/main.cpp.o: CMakeFiles/filesSources.dir/flags.make
 CMakeFiles/filesSources.dir/sources/main.cpp.o: ../sources/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/filesSources.dir/sources/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filesSources.dir/sources/main.cpp.o -c /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/filesSources.dir/sources/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filesSources.dir/sources/main.cpp.o -c /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/main.cpp
 
 CMakeFiles/filesSources.dir/sources/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/filesSources.dir/sources/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/main.cpp > CMakeFiles/filesSources.dir/sources/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/main.cpp > CMakeFiles/filesSources.dir/sources/main.cpp.i
 
 CMakeFiles/filesSources.dir/sources/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/filesSources.dir/sources/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/main.cpp -o CMakeFiles/filesSources.dir/sources/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/main.cpp -o CMakeFiles/filesSources.dir/sources/main.cpp.s
 
 CMakeFiles/filesSources.dir/sources/Analys.cpp.o: CMakeFiles/filesSources.dir/flags.make
 CMakeFiles/filesSources.dir/sources/Analys.cpp.o: ../sources/Analys.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/filesSources.dir/sources/Analys.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filesSources.dir/sources/Analys.cpp.o -c /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/Analys.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/filesSources.dir/sources/Analys.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/filesSources.dir/sources/Analys.cpp.o -c /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/Analys.cpp
 
 CMakeFiles/filesSources.dir/sources/Analys.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/filesSources.dir/sources/Analys.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/Analys.cpp > CMakeFiles/filesSources.dir/sources/Analys.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/Analys.cpp > CMakeFiles/filesSources.dir/sources/Analys.cpp.i
 
 CMakeFiles/filesSources.dir/sources/Analys.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/filesSources.dir/sources/Analys.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/sources/Analys.cpp -o CMakeFiles/filesSources.dir/sources/Analys.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/sources/Analys.cpp -o CMakeFiles/filesSources.dir/sources/Analys.cpp.s
 
 # Object files for target filesSources
 filesSources_OBJECTS = \
@@ -95,7 +95,7 @@ libfilesSourcesd.a: CMakeFiles/filesSources.dir/sources/main.cpp.o
 libfilesSourcesd.a: CMakeFiles/filesSources.dir/sources/Analys.cpp.o
 libfilesSourcesd.a: CMakeFiles/filesSources.dir/build.make
 libfilesSourcesd.a: CMakeFiles/filesSources.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libfilesSourcesd.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libfilesSourcesd.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/filesSources.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/filesSources.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/filesSources.dir/clean:
 .PHONY : CMakeFiles/filesSources.dir/clean
 
 CMakeFiles/filesSources.dir/depend:
-	cd /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug /Users/alexandergaranin/Projects/test10/lab-04-boost-filesystem/cmake-build-debug/CMakeFiles/filesSources.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles/filesSources.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/filesSources.dir/depend
 
