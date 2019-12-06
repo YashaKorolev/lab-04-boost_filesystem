@@ -1,3 +1,5 @@
+#ifndef ANALYSIS_HPP
+#define ANALYSIS_HPP
 #include <boost/filesystem.hpp>
 #include <vector>
 #include <string>
@@ -162,5 +164,4 @@ cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data;
         return new_file;
     }
 };
-
-
+#endif ANALYSIS_HPP
