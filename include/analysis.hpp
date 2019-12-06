@@ -92,7 +92,7 @@ public:
     void print_name_files()
     {
         cout << "Task one " << endl;
-        for(size_t i = 0; i<informations.size(); ++i)
+        for(size_t i = 0; i < informations.size(); ++i)
         {
             cout << informations[i].broker << "  " << informations[i].title << endl;
         }
@@ -110,7 +110,9 @@ public:
 
             cout << "files: " << i.second.size() << "| ";
 
-            cout << "lastdate: " << std::max_element(i.second.begin(), i.second.end(), lastdate)->data << " ";
+            cout << "lastdate: ";
+
+            cout << std::max_element(i.second.begin(), i.second.end(), lastdate)->data << " ";
 
             cout << std::endl;
         }
@@ -124,12 +126,11 @@ public:
             if ('_' == file[16])
                 if (".txt" == file.substr(25))
                     if (std::atoi((file.substr(8, 8)).c_str())!=0)
-                        if( std::atoi((file.substr(17, 8)).c_str())!=0)
+                        if (std::atoi((file.substr(17, 8)).c_str())!=0)
                         {
                             flag = true;
                         }
-        return flag;
-    }
+        return flag;}
 
     information parcer (string file)
     {
