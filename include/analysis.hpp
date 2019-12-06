@@ -49,10 +49,10 @@ protected:
     boost::filesystem :: path path_to_ftp;
     vector <information> informations;
 
-    std::unordered_map<int,vector<information>> accounts_groups;
+    std::unordered_map<int, vector<information>> accounts_groups;
 
 public:
-    analysis (boost::filesystem :: path path)
+    explicit analysis(boost::filesystem :: path path)
     {
         this->path_to_ftp = path;
     }
@@ -67,7 +67,7 @@ public:
                 work(dir_iter); }
     }
 
-   void file (boost::filesystem :: path path)
+   void file(boost::filesystem :: path path)
     {
         try {
             information new_file = parcer(path.filename().string());
