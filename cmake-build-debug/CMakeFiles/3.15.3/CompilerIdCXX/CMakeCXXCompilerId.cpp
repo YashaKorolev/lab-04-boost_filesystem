@@ -559,7 +559,8 @@ defined(__aix__)
 #ifdef COMPILER_VERSION_MAJOR
 char const info_version[] = {
   'I', 'N', 'F', 'O', ':',
-  'c','o','m','p','i','l','e','r','_','v','e','r','s','i','o','n','[',
+  'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_',
+  'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
   COMPILER_VERSION_MAJOR,
 # ifdef COMPILER_VERSION_MINOR
   '.', COMPILER_VERSION_MINOR,
@@ -580,14 +581,15 @@ char const info_version_internal[] = {
   'c', 'o', 'm', 'p', 'i', 'l', 'e', 'r', '_',
   'v', 'e', 'r', 's', 'i', 'o', 'n', '_',
   'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '[',
-  COMPILER_VERSION_INTERNAL,']', '\0'};
+  COMPILER_VERSION_INTERNAL, ']', '\0'};
 #endif
 
 /* Construct a string literal encoding the version number components. */
 #ifdef SIMULATE_VERSION_MAJOR
 char const info_simulate_version[] = {
   'I', 'N', 'F', 'O', ':',
-  's','i','m','u','l','a','t','e','_','v','e','r','s','i','o','n','[',
+  's', 'i', 'm', 'u', 'l', 'a', 't', 'e', '_',
+  'v', 'e', 'r', 's', 'i', 'o', 'n', '[',
   SIMULATE_VERSION_MAJOR,
 # ifdef SIMULATE_VERSION_MINOR
   '.', SIMULATE_VERSION_MINOR,
@@ -598,7 +600,7 @@ char const info_simulate_version[] = {
 #   endif
 #  endif
 # endif
-  ']','\0'};
+  ']', '\0'};
 #endif
 
 /* Construct the string literal in pieces to prevent the source from

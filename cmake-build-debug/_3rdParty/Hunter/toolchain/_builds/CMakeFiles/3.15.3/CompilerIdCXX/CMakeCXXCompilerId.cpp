@@ -1,3 +1,4 @@
+//Copyright 2019 yasha
 /* This source file must have a .cpp extension so that all C++ compilers
    recognize the extension without flags.  Borland does not know .cxx for
    example.  */
@@ -265,7 +266,10 @@
 #  define COMPILER_VERSION_TWEAK DEC(_MSC_BUILD)
 # endif
 
-#elif defined(__VISUALDSPVERSION__) || defined(__ADSPBLACKFIN__) || defined(__ADSPTS__) || defined(__ADSP21000__)
+#elif defined(__VISUALDSPVERSION__) ||
+defined(__ADSPBLACKFIN__) ||
+defined(__ADSPTS__) ||
+defined(__ADSP21000__)
 # define COMPILER_ID "ADSP"
 #if defined(__VISUALDSPVERSION__)
   /* __VISUALDSPVERSION__ = 0xVVRRPP00 */
