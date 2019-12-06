@@ -4,9 +4,8 @@
 #include "analysis.hpp"
 
 int main(){
-std::string a = "/home/absinthetoxin/CrazyOverdose/lab-04-boost-filesystem/misc/ftp";
-analysis example(a);
-example.work(a);
+analysis example("/home/absinthetoxin/CrazyOverdose/lab-04-boost-filesystem/misc/ftp");
+example.work("/home/absinthetoxin/CrazyOverdose/lab-04-boost-filesystem/misc/ftp");
 example.print_name_files();
 example.print_information();
 }
