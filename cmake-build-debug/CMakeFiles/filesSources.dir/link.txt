@@ -1,2 +1,0 @@
-/usr/bin/ar qc libfilesSourcesd.a  CMakeFiles/filesSources.dir/sources/main.cpp.o CMakeFiles/filesSources.dir/sources/Analys.cpp.o
-/usr/bin/ranlib libfilesSourcesd.a

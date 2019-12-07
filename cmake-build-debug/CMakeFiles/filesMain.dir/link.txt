@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/filesMain.dir/sources/main.cpp.o  -o filesMain libfilesSourcesd.a /home/yasha/.hunter/_Base/9a3594a/70e2fd0/48401e9/Install/lib/libboost_filesystem-mt-d-x64.a 
