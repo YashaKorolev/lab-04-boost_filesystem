@@ -18,33 +18,51 @@ HunterGate(
         SHA1 "9a3594a61227967fb92159339ba326701b287b19"
 )
 
-project(Files)
+project(lab04)
+string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
+string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
+string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
 
-hunter_add_package(Boost COMPONENTS filesystem)
-find_package(Boost CONFIG REQUIRED filesystem)
-find_package(Threads)
+hunter_add_package(GTest)
+find_package(GTest CONFIG REQUIRED)
+hunter_add_package(Boost COMPONENTS filesystem regex)
+hunter_add_package(Boost COMPONENTS system regex)
+find_package(Boost CONFIG REQUIRED filesystem regex)
+find_package(Boost CONFIG REQUIRED system regex)
 
-if (BUILD_MAIN)
-    set(ADDSOURCES ${PROJECT_NAME}Sources)
-    set(MAIN_NAME ${PROJECT_NAME}Main)
+add_executable(
+        lab04                              # Название цели
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/Analys.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/Analys.h
+        )
 
-    add_library(
-            ${ADDSOURCES}
-            STATIC
-            ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
-            sources/Analys.cpp include/Analys.h)
-    target_include_directories(
-            ${ADDSOURCES}
-            PUBLIC
-            ${CMAKE_CURRENT_SOURCE_DIR}/include
-    )
+target_link_libraries(
+        lab04                         # Цель, к которой просходит линковка
+        Boost::filesystem                        # Библиотеки, которые линкуются к цели
+        Boost::system
+)
 
-    target_link_libraries(
-            ${ADDSOURCES}
-            Boost::filesystem
-    )
+add_executable(tests
+        ${CMAKE_CURRENT_SOURCE_DIR}/test/test.cpp
+        )
 
-    add_executable(${CMAKE_PROJECT_NAME}Main ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp)
-    target_include_directories(${MAIN_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
-    target_link_libraries(${MAIN_NAME} ${ADDSOURCES})
-endif()
+target_link_libraries(
+        tests
+        ${CMAKE_THREAD_LIBS_INIT}
+        GTest::gtest
+        GTest::main
+)
+
+enable_testing()
+add_test(NAME unit_tests COMMAND tests)
+
+if (BUILD_COVERAGE)
+    set(ENABLE_COVERAGE ON CACHE BOOL "Enable coverage build." FORCE)
+    list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+    find_package(codecov)
+    add_coverage(${PROJECT_NAME})
+    add_coverage(tests)
+    list(APPEND LCOV_REMOVE_PATTERNS "'${PROJECT_SOURCE_DIR}/tests/*'")
+    coverage_evaluate()
+endif ()
