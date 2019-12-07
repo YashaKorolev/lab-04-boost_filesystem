@@ -1,5 +1,5 @@
 //
-// Created by alexandergaranin on 07.12.2019.
+// Created by yasha on 07.12.2019.
 //
 
 #ifndef FILES_ANALYS_H
@@ -12,7 +12,7 @@
 #include <cstdlib>
 #include <unordered_map>
 #include <iostream>
-//for commit
+
 struct Date {
     int day;
     int month;
@@ -22,10 +22,10 @@ struct Date {
 };
 
 struct Information {
-    std::string title; //название файла
-    std::string broker; //папка
-    int account; //аккаунт
-    Date data; // дата
+    std::string title;
+    std::string broker;
+    int account;
+    Date data;
 
     Information(
             const std::string &title,

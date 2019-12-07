@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named filesSources
+# Target rules for targets named FilesSources
 
 # Build rule for target.
-filesSources: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 filesSources
-.PHONY : filesSources
+FilesSources: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FilesSources
+.PHONY : FilesSources
 
 # fast build rule for target.
-filesSources/fast:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/build
-.PHONY : filesSources/fast
+FilesSources/fast:
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/build
+.PHONY : FilesSources/fast
 
 #=============================================================================
-# Target rules for targets named filesMain
+# Target rules for targets named FilesMain
 
 # Build rule for target.
-filesMain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 filesMain
-.PHONY : filesMain
+FilesMain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FilesMain
+.PHONY : FilesMain
 
 # fast build rule for target.
-filesMain/fast:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/build
-.PHONY : filesMain/fast
+FilesMain/fast:
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/build
+.PHONY : FilesMain/fast
 
 sources/Analys.o: sources/Analys.cpp.o
 
@@ -142,7 +142,7 @@ sources/Analys.o: sources/Analys.cpp.o
 
 # target to build an object file
 sources/Analys.cpp.o:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/Analys.cpp.o
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/Analys.cpp.o
 .PHONY : sources/Analys.cpp.o
 
 sources/Analys.i: sources/Analys.cpp.i
@@ -151,7 +151,7 @@ sources/Analys.i: sources/Analys.cpp.i
 
 # target to preprocess a source file
 sources/Analys.cpp.i:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/Analys.cpp.i
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/Analys.cpp.i
 .PHONY : sources/Analys.cpp.i
 
 sources/Analys.s: sources/Analys.cpp.s
@@ -160,7 +160,7 @@ sources/Analys.s: sources/Analys.cpp.s
 
 # target to generate assembly for a file
 sources/Analys.cpp.s:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/Analys.cpp.s
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/Analys.cpp.s
 .PHONY : sources/Analys.cpp.s
 
 sources/main.o: sources/main.cpp.o
@@ -169,8 +169,8 @@ sources/main.o: sources/main.cpp.o
 
 # target to build an object file
 sources/main.cpp.o:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.o
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/main.cpp.o
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/sources/main.cpp.o
 .PHONY : sources/main.cpp.o
 
 sources/main.i: sources/main.cpp.i
@@ -179,8 +179,8 @@ sources/main.i: sources/main.cpp.i
 
 # target to preprocess a source file
 sources/main.cpp.i:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.i
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/main.cpp.i
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/sources/main.cpp.i
 .PHONY : sources/main.cpp.i
 
 sources/main.s: sources/main.cpp.s
@@ -189,8 +189,8 @@ sources/main.s: sources/main.cpp.s
 
 # target to generate assembly for a file
 sources/main.cpp.s:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/sources/main.cpp.s
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/sources/main.cpp.s
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
 # Help Target
@@ -201,8 +201,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... filesSources"
-	@echo "... filesMain"
+	@echo "... FilesSources"
+	@echo "... FilesMain"
 	@echo "... sources/Analys.o"
 	@echo "... sources/Analys.i"
 	@echo "... sources/Analys.s"

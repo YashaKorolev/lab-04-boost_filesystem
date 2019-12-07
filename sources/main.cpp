@@ -1,4 +1,4 @@
-//Copyright 2019 yasha
+// Copyright 2019 yasha
 #include <string>
 #include <iostream>
 #include <Analys.h>

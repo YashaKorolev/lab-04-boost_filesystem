@@ -53,14 +53,14 @@ CMAKE_BINARY_DIR = /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-bu
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/filesSources.dir/all
-all: CMakeFiles/filesMain.dir/all
+all: CMakeFiles/FilesSources.dir/all
+all: CMakeFiles/FilesMain.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/filesSources.dir/clean
-clean: CMakeFiles/filesMain.dir/clean
+clean: CMakeFiles/FilesSources.dir/clean
+clean: CMakeFiles/FilesMain.dir/clean
 
 .PHONY : clean
 
@@ -70,58 +70,58 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/filesSources.dir
+# Target rules for target CMakeFiles/FilesSources.dir
 
 # All Build rule for target.
-CMakeFiles/filesSources.dir/all:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/depend
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target filesSources"
-.PHONY : CMakeFiles/filesSources.dir/all
+CMakeFiles/FilesSources.dir/all:
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/depend
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target FilesSources"
+.PHONY : CMakeFiles/FilesSources.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/filesSources.dir/rule: cmake_check_build_system
+CMakeFiles/FilesSources.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/filesSources.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FilesSources.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/filesSources.dir/rule
+.PHONY : CMakeFiles/FilesSources.dir/rule
 
 # Convenience name for target.
-filesSources: CMakeFiles/filesSources.dir/rule
+FilesSources: CMakeFiles/FilesSources.dir/rule
 
-.PHONY : filesSources
+.PHONY : FilesSources
 
 # clean rule for target.
-CMakeFiles/filesSources.dir/clean:
-	$(MAKE) -f CMakeFiles/filesSources.dir/build.make CMakeFiles/filesSources.dir/clean
-.PHONY : CMakeFiles/filesSources.dir/clean
+CMakeFiles/FilesSources.dir/clean:
+	$(MAKE) -f CMakeFiles/FilesSources.dir/build.make CMakeFiles/FilesSources.dir/clean
+.PHONY : CMakeFiles/FilesSources.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/filesMain.dir
+# Target rules for target CMakeFiles/FilesMain.dir
 
 # All Build rule for target.
-CMakeFiles/filesMain.dir/all: CMakeFiles/filesSources.dir/all
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/depend
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target filesMain"
-.PHONY : CMakeFiles/filesMain.dir/all
+CMakeFiles/FilesMain.dir/all: CMakeFiles/FilesSources.dir/all
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/depend
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target FilesMain"
+.PHONY : CMakeFiles/FilesMain.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/filesMain.dir/rule: cmake_check_build_system
+CMakeFiles/FilesMain.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/filesMain.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FilesMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/filesMain.dir/rule
+.PHONY : CMakeFiles/FilesMain.dir/rule
 
 # Convenience name for target.
-filesMain: CMakeFiles/filesMain.dir/rule
+FilesMain: CMakeFiles/FilesMain.dir/rule
 
-.PHONY : filesMain
+.PHONY : FilesMain
 
 # clean rule for target.
-CMakeFiles/filesMain.dir/clean:
-	$(MAKE) -f CMakeFiles/filesMain.dir/build.make CMakeFiles/filesMain.dir/clean
-.PHONY : CMakeFiles/filesMain.dir/clean
+CMakeFiles/FilesMain.dir/clean:
+	$(MAKE) -f CMakeFiles/FilesMain.dir/build.make CMakeFiles/FilesMain.dir/clean
+.PHONY : CMakeFiles/FilesMain.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
