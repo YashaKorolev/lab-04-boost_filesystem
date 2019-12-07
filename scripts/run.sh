@@ -4,4 +4,4 @@ set -e
 
 cmake -H. -B_builds
 cmake --build _builds
-./_builds/Files
+./_builds/lab04
