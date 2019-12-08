@@ -32,9 +32,9 @@ find_package(Boost CONFIG REQUIRED system regex)
 
 add_executable(
         lab04                              # Название цели
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/Analys.cpp
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
-        )
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/Analys.h
+        sources/main.cpp include/Analys.h)
 
 target_link_libraries(
         lab04                         # Цель, к которой просходит линковка
@@ -46,11 +46,6 @@ add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/test/test.cpp
         )
 
-target_include_directories(
-        tests
-        PUBLIC
-        ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
 target_link_libraries(
         tests
         ${CMAKE_THREAD_LIBS_INIT}

@@ -1,7 +1,7 @@
 // Copyright 2019 yasha
 #include <string>
 #include <iostream>
-#include <Analys.h>
+#include "../include/Analys.h"
 
 
 int main(){
