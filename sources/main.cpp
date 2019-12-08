@@ -5,11 +5,8 @@
 
 
 int main(){
-    Analys example
-    ("../misc/ftp");
-
-    example.work
-    ("../misc/ftp");
-example.print_name_files();
-example.print_information();
+    Analys example("/misc/ftp");
+    example.work("/misc/ftp");
+    example.print_name_files();
+    example.print_information();
 }
