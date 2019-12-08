@@ -6,10 +6,10 @@
 
 int main(){
     Analys example
-    ("/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/misc/ftp");
+    ("/misc/ftp");
 
     example.work
-    ("/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/misc/ftp");
+    ("/misc/ftp");
 example.print_name_files();
 example.print_information();
 }
