@@ -18,7 +18,7 @@ struct Date {
     int month;
     int year;
 
-    Date(int day, int month, int year) : day(day), month(month), year(year) {}
+    Date(int day1, int month1, int year1) : day(day1), month(month1), year(year1) {}
 };
 
 struct Information {
@@ -28,13 +28,13 @@ struct Information {
     Date data;
 
     Information(
-            const std::string &title,
-            const std::string &broker,
-            int account,
-            const Date &data) : title(title),
-                                broker(broker),
-                                account(account),
-                                data(data) {}
+            const std::string &title1,
+            const std::string &broker1,
+            int account1,
+            const Date &data1) : title(title1),
+                                broker(broker1),
+                                account(account1),
+                                data(data1) {}
 
 };
 
