@@ -6,10 +6,10 @@
 
 int main(){
     Analys example
-    ("/misc/ftp");
+    ("../misc/ftp");
 
     example.work
-    ("/misc/ftp");
+    ("../misc/ftp");
 example.print_name_files();
 example.print_information();
 }
