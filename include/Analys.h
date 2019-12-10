@@ -150,26 +150,37 @@ public:
         return flag;
     }
 
-    Information parcer(std::string file) {
-        if (!exceptions(file))
+    struct Account {
+        int id;
+        int day;
+        int month;
+        int year;
+
+        int pos_(std::string s) {
+            return s.find_first_of('_', 0) + 1;
+        }
+
+        Account(std::string file_name) {
+            file_name.erase(0, pos_(file_name));
+            int pos_accountid = pos_(file_name);
+            id = std::atoi((file_name.substr(0, pos_accountid)).c_str());
+            file_name.erase(0, pos_(file_name));
+            year = std::atoi((file_name.substr(0, 4)).c_str());
+            month = std::atoi((file_name.substr(4, 2)).c_str());
+            day = std::atoi((file_name.substr(6, 2)).c_str());
+        }
+
+        Date getDate(){
+            return Date(day, month, year);
+        }
+    };
+
+    Information parcer(std::string file_name) {
+        if (!exceptions(file_name))
             throw std::logic_error("");
 
-        file.erase(0, 8);
-        int account = std::atoi((file.substr(0, 8)).c_str());
-
-
-        file.erase(0, 9);
-        int year = std::atoi((file.substr(0, 4)).c_str());
-
-        file.erase(0, 4);
-        int month = std::atoi((file.substr(0, 2)).c_str());
-
-        file.erase(0, 2);
-        int day = std::atoi((file.substr(0, 2)).c_str());
-
-        Date date(day, month, year);
-
-        Information new_file(file, "", account, date);
+        Account account1(file_name);
+        Information new_file(file_name, "", account1.id, account1.getDate());
 
         return new_file;
     }
