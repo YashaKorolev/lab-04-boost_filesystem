@@ -4,10 +4,10 @@
 #include <iostream>
 #include "../include/Analys.h"
 
-//std::string PATH= "/home/yasha/YashaKorolev/rrr/lab-04-boost_filesystem/misc/ftp";
+//std::string PATH= "/home/yasha/YashaKorolev/
+// rrr/lab-04-boost_filesystem/misc/ftp";
 
 int main(/*int argc, char *argv[]*/){
-
 //    std::string PATH;
 //    if (argc < 2)
 //        PATH = "../";
