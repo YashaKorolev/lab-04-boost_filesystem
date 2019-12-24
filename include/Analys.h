@@ -146,6 +146,11 @@ public:
                 }
             }
         }
+        if (file[0] != '.' || file.substr(0, 4) == ".old")
+            flag = true;
+
+        if (file.substr(1).find('.') != std::string::npos)
+            flag = true;
 
         return flag;
     }
